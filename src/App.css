@@ -1,0 +1,94 @@
+
+.navbar {
+    font-size: 30px; /* Increase font size of nav bar links */
+    margin-left: auto; /* Send nav bar links to right of page */
+}
+
+body {
+    background-image: linear-gradient(to right, #d3cce3, #e9e4f0); 
+}
+
+main {
+    background: linear-gradient(rgb(27, 27, 27), rgb(29, 6, 6));
+    border-radius: 20px;
+    display:flex;
+    align-items: center; /* Center items */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    color: white;
+}
+
+header, footer {  /* Defines header as a flexbox and positions nicely */
+    background: linear-gradient(rgb(0, 0, 0), rgb(56, 56, 56));
+    border-radius: 20px;
+    display:flex;
+    align-items: center; /* Center items */
+    padding: 20px;
+    color: white;
+}
+header h1 { /* Makes my name a big font size */ 
+    font-size: 48px;
+    padding-left: 35px;
+}
+
+ul {
+    list-style-type: none; /* Do not show bullet points on list */
+    padding-right: 65px;
+}
+
+li{ 
+    display: inline; /* Makes list elements all on one line */
+    padding: 30px; /* Adds space between list elements */ 
+}
+
+a {
+    text-decoration: none; /* Do not show underline on links */ 
+    color: white;
+}
+
+/* Change links to certain color on hover in header and footer */
+a:hover {
+    color: rgb(131, 209, 233);
+}
+
+.center {
+    margin: auto;
+    font-size: 25px;
+}
+
+/*Media Queries */
+@media screen and (max-width: 768px) {  
+    header li{
+        display: block; /* Makes list elements on multiple lines */
+        padding: 15px;
+    }
+    .contactInfo{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) { /* When screen is smaller */
+    .flexRow {   /* Change the rows into columns for nice fitting */
+        flex-direction: column;
+    }
+    .flexBigItem { /* Change separator to top */
+        border-left: none;
+        border-top: var(--borderStyle);
+        padding-top: 10px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        margin-right: auto;
+    }
+    .projectFlexItem{
+        width: 380px;
+    }
+    .flexAboutMe {
+        flex-direction: column;
+    }
+}
