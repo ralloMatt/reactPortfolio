@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    background: linear-gradient(rgb(27, 27, 27), rgb(29, 6, 6));
+    background: linear-gradient(rgb(17, 17, 17), rgb(77, 9, 9));
     border-radius: 20px;
     display:flex;
     align-items: center; /* Center items */
@@ -55,6 +55,11 @@ a:hover {
 .center {
     margin: auto;
     font-size: 25px;
+}
+
+.activeLink {
+    color: yellow;
+    font-size: 40px;
 }
 
 /*Media Queries */

@@ -1,6 +1,6 @@
 
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
 
     return (
         <header>
@@ -8,13 +8,40 @@ function Header() {
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="#">About Me</a>
+                    <a 
+                        href="#AboutMe" 
+                        onClick={() => handlePageChange('AboutMe')}
+                        className={currentPage === 'AboutMe' ? 'activeLink' : ''}
+                    >
+                        About Me
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a 
+                        href="#Portfolio" 
+                        onClick={() => handlePageChange('Portfolio')}
+                        className={currentPage === 'Portfolio' ? 'activeLink' : ''}
+                    >
+                        Portfolio
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a 
+                        href="#Contact" 
+                        onClick={() => handlePageChange('Contact')}
+                        className={currentPage === 'Contact' ? 'activeLink' : ''}
+                    >
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#Resume" 
+                        onClick={() => handlePageChange('Resume')}
+                        className={currentPage === 'Resume' ? 'activeLink' : ''}
+                    >
+                        Resume
+                    </a>
                 </li>
             </ul>
         </nav>
