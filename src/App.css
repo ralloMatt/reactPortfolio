@@ -62,6 +62,50 @@ a:hover {
     font-size: 40px;
 }
 
+main h1 {
+    font-size: 40px;
+}
+
+main p {
+    font-size: 20px;
+}
+
+.profilePhoto { /*Rounds out the profile picture. Also sets size (based on percentage of original photo) */
+    border-radius: 10px;
+    width: 228px;
+    height: 324px;
+}
+
+/* Next two classes makes columns for webpage */
+.flexSmallItem { /* Distributes spacing for smaller elements in row */
+    flex: 0 0 20%;
+}
+
+.flexBigItem { /* Distributes spacing for bigger elements in row */
+    flex: 0 0 75%;
+    border-left: var(--borderStyle);
+}
+
+.flexAboutMe { /* Class used for about me section */
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+    align-items: center;
+    flex: 0 0 60%;
+    padding: 20px;
+    padding-right: 58px;
+    margin: 20px;
+    gap: 50px;
+}
+
+.flexRow { /* Creates Flexbox Row */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Media Queries */
 @media screen and (max-width: 768px) {  
     header li{
