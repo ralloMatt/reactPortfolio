@@ -46,6 +46,20 @@ a {
     color: white;
 }
 
+.list h1 {
+    color:rgb(255, 86, 86);
+}
+
+.list h2 {
+    color:rgb(255, 143, 143);
+    padding-left: 60px;;
+}
+.list ul {
+    font-size: 20px;
+    list-style-type: square;
+    font-weight: bold;
+    padding-left: 60px;;
+}
 /* Change links to certain color on hover in header and footer */
 a:hover {
     color: rgb(131, 209, 233);
