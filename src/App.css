@@ -11,7 +11,6 @@ body {
 main {
     background: linear-gradient(rgb(17, 17, 17), rgb(77, 9, 9));
     border-radius: 20px;
-    display:flex;
     align-items: center; /* Center items */
     margin-top: 15px;
     margin-bottom: 15px;
@@ -83,13 +82,12 @@ main p {
 
 .flexBigItem { /* Distributes spacing for bigger elements in row */
     flex: 0 0 75%;
-    border-left: var(--borderStyle);
 }
 
 .flexAboutMe { /* Class used for about me section */
     display: flex;
     flex-direction: row;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
     flex: 0 0 60%;
     padding: 20px;
@@ -105,6 +103,42 @@ main p {
     justify-content: center;
     align-items: center;
 }
+
+.projectFlexItem { /* All project card flex items */ 
+    display: flex;
+    flex-direction: column;
+    border: 20px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    left: 20%;
+} 
+
+.yellowHover:hover {
+    border: 20px solid yellow;
+}
+.projectCardHeader { /* Positions each project card header nicely. Also some styling */
+    position: relative;
+    margin: 13rem 0 1.5rem 0;
+    padding: 1px;
+    background-color: lightblue;
+    border-radius: 15px;
+    opacity: 0.9;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.githubLink{
+    font-size: 45px;
+    color: black;
+}
+
+.githubLink:hover{
+    color: blue;
+}
+
 
 /*Media Queries */
 @media screen and (max-width: 768px) {  
