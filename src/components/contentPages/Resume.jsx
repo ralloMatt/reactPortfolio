@@ -5,7 +5,7 @@ function Resume() {
     return (
         <section class="list" style={{padding:'50px'}}>
           <h1>My Resume</h1>
-          <a href={resume} download><h2>Download Here</h2></a>
+          <a href={resume} class="big" download><h2>Download Here</h2></a>
 
           <h1>Website Knowledge</h1>
 
@@ -39,8 +39,8 @@ function Resume() {
 
           <h1>Older Websites</h1>
           <ul>
-            <li><a href="https://rallomatt.github.io/Portfolio/" target="_blank">Second One</a></li>
-            <li><a href="https://rallomatt.github.io/ralloMattWebsite/" target="_blank">First One</a></li>
+            <li><a href="https://rallomatt.github.io/Portfolio/" class="big" target="_blank">Second One</a></li>
+            <li><a href="https://rallomatt.github.io/ralloMattWebsite/" class="big" target="_blank">First One</a></li>
           
           </ul>
         </section>
