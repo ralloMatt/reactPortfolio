@@ -1,4 +1,4 @@
-import resume from '../../files/Matt Rallo Primary Resume.pdf';
+import resume from '../../files/ralloResume.pdf';
 
 function Resume() {
 
