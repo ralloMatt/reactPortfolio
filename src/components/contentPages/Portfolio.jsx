@@ -1,5 +1,6 @@
 import Project from './Project';
 
+import gimmePaw from '../../images/gimmePaw.jpg';
 import bookOff from '../../images/bookOff.png';
 import techBlog from '../../images/techBlog.jpg';
 import socialNetwork from '../../images/socialNetwork.jpg';
@@ -10,6 +11,13 @@ import recipeBook from '../../images/recipe.jpg';
 
 
 const projectList = [
+  {
+    title: 'Gimme Paw',
+    description: 'My final group project for my coding bootcamp. Website for a company that has a login where a user can set appointments.',
+    image: gimmePaw,
+    github: 'https://github.com/ralloMatt/greatk9s',
+    liveLink: 'https://greatk9s-lz2b.onrender.com',
+  },
   {
     title: 'Book-Off',
     description: 'A group project that uses the open library API and mysql2.',
